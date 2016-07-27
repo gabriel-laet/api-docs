@@ -1,0 +1,6 @@
+{
+    "extends": "@loggi/web-builder/config/babelrc",
+    "plugins": [
+        "@loggi/web-builder/lib/babel-graphql"
+    ]
+}
