@@ -1,0 +1,59 @@
+{
+  "name": "@loggi/loggi-docs",
+  "version": "1.0.0",
+  "description": "Loggi public docs",
+  "main": "src/index.js",
+  "private": true,
+  "scripts": {
+    "test": "web-builder --test",
+    "lint": "web-builder --lint",
+    "build": "web-builder --build && ./scripts/create-html.js",
+    "watch": "web-builder --watch --build",
+    "start": "web-builder --server"
+  },
+  "loggiConfig": {
+    "sourceRoot": "./src",
+    "entries": [
+      "./src/index.js"
+    ],
+    "extractStylesFrom": "./src/styles",
+    "styles": [
+      {
+        "name": "ui",
+        "files": [
+          "./src/styles/ui.scss"
+        ]
+      }
+    ],
+    "transpileModules": [
+      "@loggi/ui/components",
+      "@loggi/markdown-docs"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loggi/loggi.git"
+  },
+  "keywords": [
+    "Loggi",
+    "API",
+    "docs"
+  ],
+  "author": "Loggi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loggi/loggi/issues"
+  },
+  "homepage": "https://github.com/loggi/loggi#readme",
+  "dependencies": {
+    "@loggi/markdown-docs": "1.0.5",
+    "@loggi/ui": "0.3.16",
+    "babel-polyfill": "6.9.1",
+    "codemirror-graphql": "0.5.2",
+    "graphiql": "0.7.3",
+    "react": "15.2.1",
+    "react-codemirror": "0.2.6",
+    "react-dom": "15.2.1",
+    "whatwg-fetch": "^1.0.0"
+  }
+}
