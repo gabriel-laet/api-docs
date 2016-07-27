@@ -7,7 +7,7 @@
   "scripts": {
     "test": "web-builder --test",
     "lint": "web-builder --lint",
-    "build": "web-builder --build",
+    "build": "web-builder --build && ./scripts/create-html.js",
     "watch": "web-builder --watch --build",
     "start": "web-builder --server"
   },
