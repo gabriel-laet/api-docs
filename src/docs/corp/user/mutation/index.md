@@ -153,7 +153,7 @@ Use this mutation to change user contact information. You will be able
  
 ## Update user general informations
   
-  You can use this mutation to update the first name, last name and cpf.
+You can use this mutation to update the first name, last name and cpf.
   
   ```
   mutation {
@@ -194,7 +194,7 @@ Use this mutation to change user contact information. You will be able
   ```
   
 ## Update user address information
-This mutation allow change user address information. The address data is retrieved usging the Google geocode service.
+This mutation allow change user address information. The `addressData` is retrieved using the Google geocode service.
 ```
     mutation{
       updatePersonalAddress(
