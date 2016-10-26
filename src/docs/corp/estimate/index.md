@@ -1,7 +1,7 @@
 Estimates
 ==========
 
-The estimate of the details of an inquiry need the following data:
+The estimate of an inquiry needs the following data:
 
 - city: Id of the city. Options available:
     - 1: Sao Paulo;
