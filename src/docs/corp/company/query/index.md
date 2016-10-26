@@ -38,3 +38,32 @@ query{
   }
 }
 ```
+
+## Company financial contact
+This query return the company financial contact
+```
+query {
+  financialContact {
+    id
+    fullName
+    email
+    landline
+    mobile1
+  }
+}
+```
+
+**JSON**
+```
+{
+  "data": {
+    "financialContact": {
+      "fullName": "Financial Contact",
+      "email": "financial@company.com",
+      "landline": "1130755449",
+      "mobile1": "1197553386"
+    }
+  }
+}
+```
+ 
