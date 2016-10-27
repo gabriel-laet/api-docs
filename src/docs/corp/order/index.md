@@ -3,7 +3,7 @@ Order
 
 **Create an order**
 
-An order is created when confirm an inquiry.
+An order is created when confirm an [inquiry](../corp/inquiry). The input `inquiry` should be the value in `inquiry.pk` and `paymentMethod` should be the value of `pk` in one payment result in [allPaymentMethods](../corp/paymentmethod) query.
 
 Example:
 
