@@ -19,7 +19,7 @@ function LoggiDocsLogo() {
 
 
 function graphQLFetcher(graphQLParams) {
-  return fetch('https://staging.loggi.com/external-graphql', {
+  return fetch('https://staging.loggi.com/public-graphql', {
     method: 'post',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(graphQLParams),
