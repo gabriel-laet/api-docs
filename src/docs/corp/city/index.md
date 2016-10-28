@@ -1,7 +1,7 @@
-City
-====
+# API documentation - City
 
-**List all available cities**
+
+List all available cities.
 
 Example:
 

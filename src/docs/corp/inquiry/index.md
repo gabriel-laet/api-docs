@@ -1,29 +1,7 @@
-Inquiries
-=========
+# API documentation - Inquiry
 
-An inquiry needs the following data:
 
-- city: Id of the city. Query to list [all cities](../corp/city);
-
-- packateType: Packate type to be delivered:
-    - "document": Document delivery;
-    - "box": Small box, with max dimension 15cm x 15cm x 15cm;
-    - "medium_box": Max dimension 20cm x 20cm x 20cm;
-    - "large_box": Max dimension 42cm x 44cm x 32cm.
-
-- slo: Int value representing the delivery mode to be used:
-    - "1": Loggi Já - Entrega imediata (default);
-    - "2": Loggi Smart - Entrega em até 4 horas.
-
-- transportType: Select transport type, can be moto(default), bicycle or van;
-
-- waypoints - List of points for an inquiry:
-    - tag: Classify an action in this point;
-    - instructions: Description about what to do in each point;
-    - addressData: Full information about the address;
-    - addressComplement: Optional complement of an address;
-    - isReturn: Optional boolean to indicates if it's a return point;
-    - favorite: Optional favorite address id selected to create a point. 
+Create an inquiry to a specific city, type of delivery, points and type of service (slo).
 
 Example:
 
