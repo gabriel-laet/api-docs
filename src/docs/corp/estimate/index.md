@@ -3,12 +3,7 @@ Estimates
 
 The estimate of an inquiry needs the following data:
 
-- city: Id of the city. Options available:
-    - 1: Sao Paulo;
-    - 2: Rio de Janeiro;
-    - 3: Belo Horizonte;
-    - 4: Curitiba;
-    - 5: Porto Alegre
+- city: Id of the city. Query to list [all cities](../corp/city);
 
 - transportType: Select transport type, can be moto, bicycle or van;
 
