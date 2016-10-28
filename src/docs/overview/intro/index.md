@@ -1,23 +1,30 @@
-Intro
-=====
-
-Bem vindo a API da Loggi.
-
-Quaisquer dúvidas, favor encaminhar via email para dev@loggi.com
-
-A grosso modo trata-se de uma API Restful, na medida do possível e do pragmático. Via de regra respeitam-se os verbos de HTTP, bem como seus códigos de retorno.
+# Intro - Welcome to Loggi GraphQL API
 
 
-Todos os requests devem ser autenticados pela chave de API.
+Explore and try Loggi API with GraphiQL interface below. There is a link **Docs** above the interface where you can navigate and search for specifications.
 
 
-Todos as respostas são no formato JSON. Exceto em alguns casos de erro
-(503, 410).
+There are examples in this doc for all queries and mutations available to integration.
 
 
-Payloads para POST e PUT devem ser feitos no corpo da requisição codificados
-como JSON.
+All the topics in **Overview** apply to the product Pro. Documentation for Loggi Pro API [here](http://api.docs.dev.loggi.com/spec/).
 
 
-A documentação da API do Loggi Pro está em : http://api.docs.dev.loggi.com/spec/.
-De qualquer maneira todos os tópicos desta página de Intro valem para o pro.
+Already have an integration with our Restful API? Old documentation can be found [here](http://api.docs.dev.loggi.com/). 
+
+
+Any doubts, please contact us at [dev@loggi.com](mailto:dev@loggi.com).
+
+```graphiql
+query {
+  allCities {
+    edges {
+      node {
+        pk
+        name
+        slug
+      }
+    }
+  }
+}
+```
