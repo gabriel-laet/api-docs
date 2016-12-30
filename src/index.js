@@ -38,8 +38,9 @@ const config = {
   logo: LoggiDocsLogo,
   files: require.context('@loggi/markdown-docs/loader!./docs', true, /\.md$/),
   ordering: {
-    root: ['introduction', 'overview', 'resources', 'help'],
+    root: ['introduction', 'corp-overview', 'resources', 'help'],
     introduction: ['welcome', 'environments', 'getting-access', 'http-request-examples', 'quick-graphql-tips'],
+    'corp-overview': ['generate-a-quote', 'confirm-an-order', 'order-follow-up', 'add-return-waypoint', 'update-waypoint-information', 'cancel-order'],
     // resources: []
     help: ['support', 'disclaimer']
   },

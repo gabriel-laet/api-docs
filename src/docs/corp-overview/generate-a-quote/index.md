@@ -1,0 +1,2 @@
+# Corp - Generate a quote
+
