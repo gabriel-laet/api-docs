@@ -38,9 +38,10 @@ const config = {
   logo: LoggiDocsLogo,
   files: require.context('@loggi/markdown-docs/loader!./docs', true, /\.md$/),
   ordering: {
-    root: ['overview', 'resources'],
-    overview: ['welcome', 'environments', 'getting-access', 'http-request-examples', 'quick-graphql-tips'],
+    root: ['introduction', 'overview', 'resources', 'help'],
+    introduction: ['welcome', 'environments', 'getting-access', 'http-request-examples', 'quick-graphql-tips'],
     // resources: []
+    help: ['support', 'disclaimer']
   },
   onMarkdownIterate: (Tag, props, children) => {
     if (Tag === 'code' && props['data-language'] === 'graphql') {

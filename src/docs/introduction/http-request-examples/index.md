@@ -49,3 +49,5 @@ query {
 }
 
 ```
+
+For more details about authentication services, go to [xxx](x).
