@@ -34,30 +34,31 @@ A credential is dedicated to a determined environment, manage with prudential to
 
 #### Create credential
 
-To create a credential, logged into your account, access the desired environment using of the link bellow and and follow the page instructions.
+To create a credential, logged into your account, access the desired environment using one option bellow and follow the page instructions.
 
  - For Sandbox: https://staging.loggi.com/contas/haxor/
  - For Production: https://loggi.com/contas/haxor/
 
-#### Headers HTTP for services
+#### HTTP
 
-All services requires the usage of a HTTP Header called `Content-Type` that must be as bellow:
-
-```
-Content-Type: application/json;charset=UTF-8
-```
-
-##### Authorization
-
-Excluding login, all services is private and requires the usage of a HTTP Header called `ApiKey` that is composed as example bellow:
+All services is hosted in path `/public-graphql` of HTTP verb `POST` as bellow:
 
 ```
-ApiKey a-valid-email@domain.ext:a-valid-token
+> POST /public-graphql HTTP/1.1
+> Host: staging.loggi.com
+> Content-type: Content-Type: application/json;charset=UTF-8
+> ApiKey a-valid-email@domain.ext:a-valid-token
 ```
+
+> Important: Excluding login, all services is private and requires the usage of a HTTP Header called `ApiKey` that is composed as described above.
 
 ## Services
 
+> TODO (design) Create a movie that demonstrate how is easy to use GraphQL API.
+
 Explore and try Loggi API with GraphiQL interface below. There is a link Docs above (in left corn on top) the interface where you can navigate and search for specifications.
+
+
 
 For example, bellow you can explore a search by cities available in platform:
 
@@ -75,9 +76,9 @@ query {
 }
 ```
 
-In this section, all examples contains only the minimum data necessary to experience a response with success.
+In the following sub sections, all examples contains only the minimum data necessary to you experience a response with success.
 
-You must read the specs in GraphQL Docs to understand in details the purpose of each field available in queries and mutations.
+You must read (hack) the specs in GraphQL Docs to understand in details the purpose of each field available in queries and mutations.
 
 
 ### Login
