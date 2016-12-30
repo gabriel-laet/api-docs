@@ -37,6 +37,11 @@ const codemirrorSettings = {
 const config = {
   logo: LoggiDocsLogo,
   files: require.context('@loggi/markdown-docs/loader!./docs', true, /\.md$/),
+  ordering: {
+    root: ['overview', 'resources'],
+    overview: ['welcome', 'environments', 'getting-access', 'http-request-examples', 'quick-graphql-tips'],
+    // resources: []
+  },
   onMarkdownIterate: (Tag, props, children) => {
     if (Tag === 'code' && props['data-language'] === 'graphql') {
       return (

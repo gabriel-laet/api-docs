@@ -1,3 +1,5 @@
+# TODO (fcm) Select first option in left menu.
+
 # Welcome to Loggi
 
 This document describes how to integrate with Loggi and enjoy the best of our on demand last mile delivery service over API.
@@ -6,79 +8,9 @@ About the technologies evolved, is desired a previous basic knowledge in HTTP pr
 
 In case of you not found some important information or have a behavior different from the documentation that makes success impossible, [contact us](#).
 
-## Introduction
-
-In first of all, you need to setup a [configuration management](#) support in your application to turn on possible alternate between our sandbox (for tests) and production (real world) when you perform operations against Loggi API.
-
-### Sandbox environment
-
-Is maintained for development purposes, you can use as you go without be charged (because the service is not real). But, pay attention to details bellow:
-
- - no e-mails will be send.
-
-> Entry-point: https://staging.loggi.com/
-
-### Production environment
-
-Is real world, all operations will be charged and service executed following the terms of contract.
-
-> XXX (dev) Must we implement a ACL policy to protect production from undesired access?
-> **Maybe, we will need to separate the api in a sub-domain.**
-
-.
->  Entry-point: https://www.loggi.com/
-
-### Getting access
-
-A credential is dedicated to a determined environment, manage with prudential to avoid security failures or undesired invoices (e.g: because a developer asked a real ride in a test).
-
-#### Create credential
-
-To create a credential, logged into your account, access the desired environment using one option bellow and follow the page instructions.
-
- - For Sandbox: https://staging.loggi.com/contas/haxor/
- - For Production: https://loggi.com/contas/haxor/
-
-#### HTTP
-
-All services is hosted in path `/public-graphql` of HTTP verb `POST` as bellow:
-
-```
-> POST /public-graphql HTTP/1.1
-> Host: staging.loggi.com
-> Content-type: Content-Type: application/json;charset=UTF-8
-> ApiKey a-valid-email@domain.ext:a-valid-token
-```
-
-> Important: Excluding login, all services is private and requires the usage of a HTTP Header called `ApiKey` that is composed as described above.
 
 ## Services
 
-> TODO (design) Create a movie that demonstrate how is easy to use GraphQL API.
-
-Explore and try Loggi API with GraphiQL interface below. There is a link Docs above (in left corn on top) the interface where you can navigate and search for specifications.
-
-
-
-For example, bellow you can explore a search by cities available in platform:
-
-```graphiql
-query {
-  allCities {
-    edges {
-      node {
-        pk
-        name
-        slug
-      }
-    }
-  }
-}
-```
-
-In the following sub sections, all examples contains only the minimum data necessary to you experience a response with success.
-
-You must read (hack) the specs in GraphQL Docs to understand in details the purpose of each field available in queries and mutations.
 
 
 ### Login
