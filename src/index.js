@@ -40,7 +40,7 @@ const config = {
   ordering: {
     root: ['introduction', 'corp-overview', 'resources', 'help'],
     introduction: ['welcome', 'environments', 'getting-access', 'http-request-examples', 'quick-graphql-tips'],
-    'corp-overview': ['generate-a-quote', 'confirm-an-order', 'order-follow-up', 'add-return-waypoint', 'update-waypoint-information', 'cancel-order'],
+    'corp-overview': ['generate-a-quote', 'confirm-an-order', 'search-an-order', 'order-follow-up', 'add-return-waypoint', 'update-waypoint-information', 'cancel-order'],
     // resources: []
     help: ['support', 'disclaimer']
   },
