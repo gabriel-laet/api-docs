@@ -39,10 +39,10 @@ const config = {
   files: require.context('@loggi/markdown-docs/loader!./docs', true, /\.md$/),
   ordering: {
     root: ['introduction', 'corp-overview', 'resources', 'help'],
-    introduction: ['welcome', 'environments', 'getting-access', 'http-request-examples', 'quick-graphql-tips'],
+    introduction: ['welcome', 'environments', 'getting-access', 'authorization', 'quick-graphql-tips'],
     'corp-overview': ['generate-a-quote', 'confirm-an-order', 'search-an-order', 'order-follow-up', 'add-return-waypoint', 'update-waypoint-information', 'cancel-order'],
     // resources: []
-    help: ['support', 'disclaimer']
+    help: ['support', 'terms-of-use']
   },
   onMarkdownIterate: (Tag, props, children) => {
     if (Tag === 'code' && props['data-language'] === 'graphql') {
