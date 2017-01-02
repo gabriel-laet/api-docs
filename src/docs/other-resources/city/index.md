@@ -1,4 +1,4 @@
-# API documentation - City
+# City resources
 
 
 List all available cities.

@@ -1,4 +1,4 @@
-# API documentation - Rating
+# Rating an order
 
 
 Give a rating for an order, value can be from 0 (worst) to 5 (best). 

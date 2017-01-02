@@ -1,9 +1,8 @@
-# API documentation - Share
+# Share an order
 
+Enable notifications with other person by email or mobile to an order.
 
-Mutation to notify an order with other person by email or mobile.
-
-Before driver arrive at a point, you can pass in field `waypoint` the `waypoint.pk` of a specific point. To find this id, use query [`order`](../corp/order) and check field `waypoints.pk` to list all possible points of an order.
+Before driver arrive at a point, you can pass in field `waypoint` the `waypoint.pk` of a specific point. To find this id, use query [`order`](/corp-overview/order-follow-up) and check field `waypoints.pk` to list all possible points of an order.
 
 ```graphql
 mutation {

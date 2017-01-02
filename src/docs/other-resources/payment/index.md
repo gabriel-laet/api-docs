@@ -1,7 +1,7 @@
 # API documentation - Payment Methods
 
 
-### Search payment methods
+## Search payment methods
 
 List of all payments methods from logged user:
 
@@ -44,7 +44,7 @@ Response example:
 }
 ```
 
-### Create credit card
+## Create credit card
 
 Example:
 
@@ -88,7 +88,7 @@ Response example:
 }
 ```
 
-### Create cost center
+## Create cost center
 
 Example: 
 
@@ -133,7 +133,7 @@ Response example:
 }
 ```
 
-### Delete Credit Card
+## Delete Credit Card
 
 Example:
 
@@ -174,7 +174,7 @@ Response example:
 }
 ```
 
-### Delete Cost Center
+## Delete Cost Center
 
 Example:
 

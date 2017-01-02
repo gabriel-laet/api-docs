@@ -1,7 +1,7 @@
-# API documentation - User
+# Authorization resources
 
 
-### Login
+## Login
 
 To authenticated, you need of a valid credential.
 
@@ -24,7 +24,7 @@ The operation is considered with success when the user node from response has da
 > TODO: (sec) Verify if this operation is protected against brute force, after, inspect if UserNode has some sensitive data.
 
 
-### Logout
+## Logout
 
 ```graphiql
 mutation{
