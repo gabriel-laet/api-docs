@@ -13,15 +13,15 @@ mutation {
   }) {
     clientMutationId
     user {
-        api_key
+        apiKey
     }
   }
 }
 ```
 
-The operation is considered with success when the user node from response has data. Then, you need to use field `api_key` in header for the next operations how described in authentication on conventions.
+The operation is considered with success when the user node from response has data. Then, you need to use field `apiKey` in header for the next operations how described in authorization introduction.
 
-> TODO: (sec) Verify if this operation is allowed against brute force operations, after, inspect if UserNode has some sensitive data.
+> TODO: (sec) Verify if this operation is protected against brute force, after, inspect if UserNode has some sensitive data.
 
 
 ### Logout
