@@ -1,5 +1,6 @@
 # City resources
 
+TODO (sec) CityNode exposes `shopSet`, `inquiries`, `orders`, `itineraries`, `driverSet`, `pricing`
 
 List all available cities.
 

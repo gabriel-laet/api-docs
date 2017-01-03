@@ -2,6 +2,10 @@
 
 After confirmed an order, it's possible to get information about it. Input `id` will be the result of `order.pk`:
 
+TODO (sec) Order and Itinerary expose war-room URL.\
+TODO (sec) Driver object is exposing all data available.\
+TODO (sec) BasePaymentMethod and Itinerary offer `orders` and `inquiries` that I am not sure that is safe to be exposed.\
+
 ```graphql
 {
   order(id: 750) {

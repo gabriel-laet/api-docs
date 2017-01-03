@@ -1,5 +1,7 @@
 # Cancel an order
 
+TODO (sec) Disable features of order edit from public mutation.
+
 ## Allocating order
 
 When an order is allocating the user can cancel it without be charged.
