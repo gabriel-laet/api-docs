@@ -1,6 +1,6 @@
 # Getting access
 
-A credential is dedicated to a determined environment, manage with carefully to avoid security failures or undesired invoices (e.g: because a developer asked a real ride in a test).
+A credential is dedicated to a determined environment, manage carefully to avoid security failures or undesired invoices (eg: because a developer asked a real ride in a test).
 
 ## Create credential
 

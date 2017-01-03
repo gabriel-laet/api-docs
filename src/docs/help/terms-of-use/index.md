@@ -1,4 +1,4 @@
-# Disclaimer
+# Terms of use
 
 All rights of API protocol is reserved to Loggi Tecnologia.
 

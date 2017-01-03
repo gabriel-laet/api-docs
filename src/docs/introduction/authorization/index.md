@@ -41,4 +41,4 @@ $ curl -v 'https://staging.loggi.com/graphql?' \
 {"data":{"allCities":{"edges":[{"node":{"pk":4,"name":"Curitiba","slug":"ct"}},{"node":{"pk":1,"name":"S\u00e3o Paulo","slug":"sp"}},{"node":{"pk":2,"name":"Rio de Janeiro","slug":"rj"}},{"node":{"pk":3,"name":"Belo Horizonte","slug":"bh"}},{"node":{"pk":5,"name":"Porto Alegre","slug":"pa"}}]}}}
 ```
 
-For more details about authentication services, go to [authorization resource](/resources/authorization).
+For more details about authentication services, go to [authorization resource](/other-resources/authorization).

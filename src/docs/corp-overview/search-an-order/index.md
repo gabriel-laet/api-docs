@@ -1,6 +1,6 @@
 # Search an order
 
-Request information about all orders in the last 5 hours.
+Request information about all orders in the past 10 hours.
 
 We can check the status of each order:
 

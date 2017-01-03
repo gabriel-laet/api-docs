@@ -1,5 +1,7 @@
 # Generate a quote
 
+## Estimating price for a ride
+
 Calculate price for an order to a specific city, transport type and points.
 
 Example:
@@ -37,7 +39,7 @@ query {
 ```
 
 
->>>>>
+## Creating a inquiry
 
 Create an inquiry to a specific city, type of delivery, points and type of service (slo).
 

@@ -1,4 +1,4 @@
-# API documentation - Payment Methods
+# Payment methods resources
 
 
 ## Search payment methods
@@ -46,6 +46,8 @@ Response example:
 
 ## Create credit card
 
+To create a new cost center using a credit card.
+
 Example:
 
 ```graphql
@@ -89,6 +91,8 @@ Response example:
 ```
 
 ## Create cost center
+
+To create a new cost center using billet.
 
 Example: 
 
@@ -135,6 +139,8 @@ Response example:
 
 ## Delete Credit Card
 
+To remove a cost center that is using a credit card.
+
 Example:
 
 ```graphql
@@ -175,6 +181,8 @@ Response example:
 ```
 
 ## Delete Cost Center
+
+To remove a cost center that is using billet.
 
 Example:
 
