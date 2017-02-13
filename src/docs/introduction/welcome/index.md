@@ -1,4 +1,3 @@
-> TODO (fcm) Select first option in left menu.
 
 # Welcome to Loggi
 
