@@ -46,14 +46,15 @@
   },
   "homepage": "https://github.com/loggi/loggi#readme",
   "dependencies": {
-    "@loggi/markdown-docs": "1.0.5",
-    "@loggi/ui": "0.3.16",
-    "babel-polyfill": "6.9.1",
-    "codemirror-graphql": "0.5.2",
-    "graphiql": "0.7.3",
-    "react": "15.2.1",
-    "react-codemirror": "0.2.6",
-    "react-dom": "15.2.1",
-    "whatwg-fetch": "^1.0.0"
+    "@loggi/js": "^1.0.8",
+    "@loggi/markdown-docs": "1.1.5",
+    "@loggi/ui": "0.23.8",
+    "babel-polyfill": "6.22.0",
+    "codemirror-graphql": "0.6.2",
+    "graphiql": "0.9.1",
+    "react": "15.4.2",
+    "react-codemirror": "0.3.0",
+    "react-dom": "15.4.2",
+    "whatwg-fetch": "^2.0.2"
   }
 }
