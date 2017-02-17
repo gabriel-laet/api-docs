@@ -14,9 +14,6 @@ If you have a problem about a ongoing situation, [contact our customer experienc
 > Programming languages that has support to HTTP works very well with Loggi.
 
 
-> **TODO (po) Add clients to product road map.**.
-
-
 > **I don't know [GraphQL](http://graphql.org/)! What I need to do?** \
 > Watch [this 5 minutes tip (by Josh Black)](https://egghead.io/lessons/javascript-using-graphql-s-graphiql-tool), and follow to [official introduction](http://graphql.org/learn/).
 

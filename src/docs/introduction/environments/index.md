@@ -17,7 +17,3 @@ Is real world, all operations will be charged and service executed following [te
 >  Entry-point: [https://www.loggi.com/public-graphql](https://www.loggi.com/public-graphql)
 
 
-> XXX (sec) Must we implement a ACL policy to protect production from undesired access? \
-> **Maybe, we will need to separate the api in a sub-domain!**
-
-> XXX (sec) We need to accept requests only of authorized domains (use SPF DNS Entry).

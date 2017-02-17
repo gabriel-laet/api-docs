@@ -1,8 +1,5 @@
 # Payment methods resources
 
-TODO (sec) CreditCardNode is exposing internal gateway information.
-TODO (sec) CreditCardNode is exposing UserNode with all information.
-
 ## Search payment methods
 
 List of all payments methods from logged user:

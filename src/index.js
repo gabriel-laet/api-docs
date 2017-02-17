@@ -135,6 +135,11 @@ const config = {
       props.className = null;
       return <View {...props}>{children}</View>;
     }
+    
+    if (Tag === 'a') {
+      const url = Object.keys(props).find(k => k.startsWith('href')).split(',').pop();
+      return <a href={url}>{children}</a>
+    }
 
     if (Tag === 'code' && props['data-language'] === 'graphiql') {
       return getGraphiQL({query: children[0]});
