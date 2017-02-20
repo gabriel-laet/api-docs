@@ -2,7 +2,7 @@
 
 ## Allocating order
 
-When an order is allocating the user can cancel it without be charged.
+When an order is allocating, the user can cancel it without charge.
 
 Request example:
 

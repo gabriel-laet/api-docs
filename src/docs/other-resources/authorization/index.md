@@ -19,7 +19,7 @@ mutation {
 }
 ```
 
-The operation is considered with success when the user node from response has data. Then, you need to use field `apiKey` in header for the next operations how described in [authorization introduction](/introduction/authorization).
+The operation is considered successful when the user node from the response has data. Then, you will need to use field `apiKey` in header for the next operations as described in [authorization introduction](/introduction/authorization).
 
 
 ## Logout

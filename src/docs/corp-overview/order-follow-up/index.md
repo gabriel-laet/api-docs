@@ -1,6 +1,6 @@
 # Order follow-up
 
-After confirmed an order, it's possible to get information about it. Input `id` will be the result of `order.pk`:
+After an order is confirmed, it is possible to get information about its status. The input `id` should be the result of `order.pk` from the [confirmation mutation](/corp-overview/confirm-an-order):
 
 ```graphql
 {

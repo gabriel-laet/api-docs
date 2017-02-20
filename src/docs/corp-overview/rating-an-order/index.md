@@ -1,9 +1,9 @@
 # Rating an order
 
 
-Give a rating for an order, value can be from 0 (worst) to 5 (best). 
+Give a rating for an order. The value range from 0 (worst) to 5 (best).
 
-Remember that only the user who ordered can rate. If other user try to rate, an error will return in `errors.message`.
+Remember that only the user who made the order can rate. If another user try to rate it, an error will return in `errors.message`.
 
 ```graphql
 mutation {
