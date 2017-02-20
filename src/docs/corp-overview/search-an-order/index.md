@@ -2,14 +2,14 @@
 
 Request information about all orders in the past 10 hours.
 
-We can check the status of each order:
+The following are the status that each order can be:
 
-- allocating: Waiting for a driver;
-- accepted: Driver accepted, going to first point;
-- started: Driver arrived at least in the first point;
-- finished: Order finished, driver checked out the last point;
-- waiting_slo: If slo selected in order is 2 (Smart), the order will wait for other orders to bundle;
-- dropped: No driver available in 20 minutes after order created.
+- allocating: waiting for a driver;
+- accepted: driver designated and going to first point;
+- started: driver arrived at the first point and the order is ongoing;
+- finished: order finished and driver checked out the last point;
+- waiting_slo: if slo selected in order is 2 (Smart), the order will wait for other orders to bundle;
+- dropped: No driver available in 20 minutes after created.
 
 Example:
 

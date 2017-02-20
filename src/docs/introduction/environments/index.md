@@ -1,10 +1,10 @@
 # Environments
 
-In first of all, you need to setup a configuration management support in your application to turn on possible alternate between our sandbox (for tests) and production (real world) when you perform operations against Loggi API.
+ In order to perform operations against Loggi API, you will first need to setup a configuration management in your application to support switching between our sandbox (for tests) and production (real world) environments.
 
 ## Sandbox environment
 
-Is maintained for development purposes, you can use as you go without be charged (because the service is not real). But, pay attention to details bellow:
+Is maintained for development and test purposes. You can use free of charge (because the service is not real) but, pay attention to details bellow:
 
  - no e-mails will be send.
 
@@ -12,7 +12,7 @@ Is maintained for development purposes, you can use as you go without be charged
 
 ## Production environment
 
-Is real world, all operations will be charged and service executed following [terms of use](/help/terms-of-use).
+The real deal; all operations will be charged and service will be executed following the [terms of use](/help/terms-of-use).
 
 >  Entry-point: [https://www.loggi.com/public-graphql](https://www.loggi.com/public-graphql)
 

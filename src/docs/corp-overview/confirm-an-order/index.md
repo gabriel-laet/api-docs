@@ -1,8 +1,8 @@
 # Confirm an order
 
-An order is created when confirm an [inquiry](/corp-overview/generate-a-quote).
+An order is created when an [inquiry](/corp-overview/generate-a-quote) is confirmed.
 
-The input `inquiry` should be the value in `inquiry.pk` and `paymentMethod` should be the value of `pk` in one of the payment result in [allPaymentMethods](/other-resources/payment) query.
+The input `inquiry` should be the value of `inquiry.pk`, and `paymentMethod` should be the value of `pk` from one of the payment result in [allPaymentMethods](/other-resources/payment) query.
 
 Example:
 

@@ -1,10 +1,10 @@
 # Getting access
 
-A credential is dedicated to a determined environment, manage carefully to avoid security failures or undesired invoices (eg: because a developer asked a real ride in a test).
+A credential is needed to access either the sandbox or production environments, and are specific for each one. Pay attention to avoid security failures or undesired charges (eg: because a developer asked a real ride during a test).
 
 ## Create credential
 
-To create a credential, logged into your account, access the desired environment using one option bellow and follow the page instructions.
+To create a credential, log into your account, access the desired environment using one option bellow and follow the page instructions.
 
  - For Sandbox: [https://staging.loggi.com/contas/haxor/](https://staging.loggi.com/contas/haxor/)
  - For Production: [https://loggi.com/contas/haxor/](https://loggi.com/contas/haxor/)

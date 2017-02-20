@@ -2,7 +2,7 @@
 
 ## Estimating price for a ride
 
-Calculate price for an order to a specific city, transport type and points.
+Calculate the price for an order of a specific city, transport type and points.
 
 Example:
 
@@ -41,7 +41,7 @@ query {
 
 ## Creating a inquiry
 
-Create an inquiry to a specific city, type of delivery, points and type of service (slo).
+Create an inquiry for a specific city, type of delivery, points and type of service (slo).
 
 Example:
 

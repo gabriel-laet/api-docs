@@ -1,6 +1,6 @@
 # Authorization
 
-All services is hosted in path `/public-graphql` using HTTP verb `POST`, bellow is available a sample of a request using `curl` to create a authorization:
+All services are hosted in the path `/public-graphql`, using HTTP verb `POST`. The sample bellow is an example of a request using `curl` to create a authorization:
 
 ```
 $ curl -v 'https://staging.loggi.com/graphql?' \
@@ -17,7 +17,7 @@ $ curl -v 'https://staging.loggi.com/graphql?' \
 {"data":{"login":{"user":{"apiKey":"a-valid-api-key"}}}}
 ```
 
-Excluding login, all services is private and requires the usage of a HTTP Header called `ApiKey` that is composed as:
+Except for the login, all services are private and require the usage of the HTTP Header `ApiKey`. Its value is composed by the email address followed by the apiKey returned above, separeted by a colon:
 
 > ApiKey a-valid-email@domain.ext:a-valid-api-key
 
@@ -41,4 +41,4 @@ $ curl -v 'https://staging.loggi.com/graphql?' \
 {"data":{"allCities":{"edges":[{"node":{"pk":4,"name":"Curitiba","slug":"ct"}},{"node":{"pk":1,"name":"S\u00e3o Paulo","slug":"sp"}},{"node":{"pk":2,"name":"Rio de Janeiro","slug":"rj"}},{"node":{"pk":3,"name":"Belo Horizonte","slug":"bh"}},{"node":{"pk":5,"name":"Porto Alegre","slug":"pa"}}]}}}
 ```
 
-For more details about authentication services, go to [authorization resource](/other-resources/authorization).
+For more details about the authentication services, go to [authorization resource](/other-resources/authorization).

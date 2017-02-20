@@ -2,7 +2,7 @@
 
 ## Search payment methods
 
-List of all payments methods from logged user:
+List of all payments methods for the logged user:
 
 ```graphql
 query {
