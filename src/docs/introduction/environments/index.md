@@ -6,7 +6,7 @@
 
 Is maintained for development and test purposes. You can use free of charge (because the service is not real) but, pay attention to details bellow:
 
- - no e-mails will be send.
+ - no e-mails will be sent.
 
 > Entry-point: [https://staging.loggi.com/public-graphql](https://staging.loggi.com/public-graphql)
 
@@ -15,5 +15,3 @@ Is maintained for development and test purposes. You can use free of charge (bec
 The real deal; all operations will be charged and service will be executed following the [terms of use](/help/terms-of-use).
 
 >  Entry-point: [https://www.loggi.com/public-graphql](https://www.loggi.com/public-graphql)
-
-
