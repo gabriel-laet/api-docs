@@ -5,7 +5,19 @@ Useful to retrieve information on Order and Package status.
 Request example:
 
 ```graphql
-{"query": "query {packageOrder(packageId: 80455) {id pk status packages {pk status statusCode statusCodeDisplay} } }"}
+query {
+  packageOrder(packageId:80455) {
+    id
+    pk
+    status
+    packages {
+      pk
+      status
+      statusCode
+      statusCodeDisplay
+    }
+  }
+}
 ```
 
 Response example:
@@ -14,15 +26,15 @@ Response example:
 {
   "data": {
     "packageOrder": {
-      "id": "T3JkZXJOb2RlOjMzODYw",
-      "pk": 33860,
-      "status": "allocating",
+      "id": "T3JkZXJOb2RlOjMzODU5",
+      "pk": 33859,
+      "status": "dropped",
       "packages": [
         {
           "pk": 80455,
-          "status": "allocating",
-          "statusCode": 1,
-          "statusCodeDisplay": "Agendado"
+          "status": null,
+          "statusCode": 0,
+          "statusCodeDisplay": "Não disponível"
         }
       ]
     }
@@ -32,4 +44,4 @@ Response example:
 
 #### NOTES:
 
-- ```packageOrder.packageId``` can be obtained through a call to the ```create-retail-order``` endpoint (```shop.order.packages[].pk```).
+- ```packageOrder.packageId``` can be obtained through a call to the ```all-packages``` endpoint.

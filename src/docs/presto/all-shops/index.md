@@ -1,11 +1,24 @@
 # Get All Shops information
 
-Useful to get information on all shops (name, id, categories, etc).
+Useful to get information on all shops (shopId, name, categories, etc).
 
 Request example:
 
 ```graphql
-{"query": "query {allShops {edges {node {name pk chargeOptions {label pk} } } } }"}
+query {
+  allShops {
+    edges {
+      node {
+        name
+        pk
+        chargeOptions {
+          label
+          pk
+        }
+      }
+    }
+  }
+}
 ```
 
 Response example:

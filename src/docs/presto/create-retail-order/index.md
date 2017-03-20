@@ -5,7 +5,97 @@ Useful to Create a Retail Order. Can return Inquiry and Order information.
 Request example:
 
 ```graphql
-{"query": "mutation {createRetailOrder(input: {clientMutationId:\"loggi\" id: 10, packages: [ {recipientName: \"Joao da Silva\", recipientPhone: \"11999999999\", destinationAddress: {addressComponents: [ {longName: \"161\", shortName: \"161\", types: [\"street_number\"], }, {longName: \"Rua Antônieta Leitão\", shortName: \"R. Antônieta Leitão\", types: [\"route\"], }, {longName: \"Freguesia do Ó\", shortName: \"Freguesia do Ó\", types: [\"neighborhood\", \"political\"], }, {longName: \"São Paulo\", shortName: \"São Paulo\", types: [\"locality\", \"political\"], }, {longName: \"São Paulo\", shortName: \"São Paulo\", types: [\"administrative_area_level_2\", \"political\"], }, {longName: \"São Paulo\", shortName: \"São Paulo\", types: [\"administrative_area_level_1\", \"political\"], }, {longName: \"Brazil\", shortName: \"BR\", types: [\"country\", \"political\"], }, {longName: \"02925-160\", shortName: \"02925-160\", types: [\"postal_code\"], } ], geometry: {location: {lat: -23.5024555, lng: -46.696077100000025 }, }, formattedAddress: \"Rua Antônieta Leitão, 161\" types: [\"street_address\"] } chargeValue: \"200.20\", chargeMethod: 1, chargeChange: \"10.80\"} ] }) {shop {pk name order {pk packages {pk status pickupWaypoint {index indexDisplay eta legDistance} waypoint {index indexDisplay eta legDistance } } } } } }"}
+mutation {
+  createRetailOrder(input: {
+      id: 10,
+      clientMutationId: "loggi",
+      packages: [
+      	{
+      		recipientName: "Joao da Silva",
+          recipientPhone: "11999999999",
+      	  destinationAddress:{
+            addressComponents:[
+              {
+                longName: "161",
+                shortName: "161",
+                types: ["street_number"]
+              },
+              {
+                longName: "Rua Antonieta Leitao",
+                shortName: "Rua Antonieta Leitao",
+                types: ["route"]
+              },
+    					{
+                longName: "Freguesia do O",
+                shortName: "Freguesia do O",
+                types:["neighborhood", "political"]
+              },
+    					{
+                longName: "Sao Paulo",
+                shortName: "Sao Paulo",
+                types:["locality", "political"]
+              },
+    					{
+                longName: "Sao Paulo",
+                shortName: "Sao Paulo",
+                types:["political", "administrative_area_level_2"]
+              },
+    					{
+                longName: "Sao Paulo",
+                shortName: "Sao Paulo",
+                types:["political", "administrative_area_level_1"]
+              },
+    					{
+                longName: "Brazil",
+                shortName: "BR",
+                types:["country", "political"]
+              },
+    					{
+                longName: "02925-160",
+                shortName: "02925-160",
+                types:["postal_code"]
+              }  
+            ],
+            geometry:{
+              location: {
+                lat: -23.5024555,
+                lng: -46.696077100000025
+              }
+            },
+            formattedAddress: "Rua Antonieta Leitao, 161",
+            types: ["street_address"]
+          },
+          chargeValue: "200.20",
+          chargeMethod: 1,
+          chargeChange: "10.80"          
+    		}
+      ]      
+    }) {
+    shop {
+      pk
+      name
+      order {
+        pk
+        packages {
+          pk
+          status
+          pickupWaypoint {
+            index
+            indexDisplay
+            eta
+            legDistance
+          }
+          waypoint {
+            index
+            indexDisplay
+            eta
+            legDistance
+          }
+        }        
+      }      
+    }
+  }   
+}
 ```
 
 Response example:
@@ -16,23 +106,23 @@ Response example:
     "createRetailOrder": {
       "shop": {
         "pk": 10,
-        "name": "A Happy Shop",
+        "name": "Happy Customer",
         "order": {
-          "pk": 33859,
+          "pk": 33940,
           "packages": [
             {
-              "pk": 80455,
+              "pk": 80563,
               "status": "allocating",
               "pickupWaypoint": {
                 "index": 0,
                 "indexDisplay": "A",
-                "eta": 1490031190,
+                "eta": 1490047204,
                 "legDistance": 0
               },
               "waypoint": {
                 "index": 1,
                 "indexDisplay": "B",
-                "eta": 1490033005,
+                "eta": 1490049018,
                 "legDistance": 7506
               }
             }
@@ -46,4 +136,4 @@ Response example:
 
 #### NOTES:
 
-- ```createRetailOrder.input.id``` can be obtained through a call to the ```all-shops``` endpoint (```node.pk```).
+- ```createRetailOrder.input.id``` can be obtained through a call to the ```all-shops``` endpoint.
