@@ -1,6 +1,4 @@
-# FAQ
-
-## *For developers*
+# FAQ (for developers)
 
 ### Which programming language is compatible with Loggi API?
 **Any programming language that supports HTTP** works very well with Loggi.
