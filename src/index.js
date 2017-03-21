@@ -121,7 +121,7 @@ const config = {
     introduction: ['welcome', 'environments', 'getting-access', 'authorization', 'quick-graphql-tips'],
     'corp-overview': ['generate-a-quote', 'confirm-an-order', 'search-an-order', 'order-follow-up', 'cancel-order', 'share-an-order', 'rating-an-order'],
     'presto': ['overview', 'all-shops', 'estimate-delivery', 'create-retail-order', 'all-packages', 'package-status'],
-    help: ['support', 'faq', 'graphql-useful-resources', 'terms-of-use']
+    help: ['support', 'FAQ', 'graphql-useful-resources', 'terms-of-use']
   },
   onMarkdownIterate: (Tag, props, children) => {
     if (Tag === 'code' && (props['data-language'] === 'graphql' || (isMobile && props['data-language'] === 'graphiql'))) {
