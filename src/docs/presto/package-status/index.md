@@ -20,7 +20,7 @@ query {
 }
 ```
 
-NOTE: the ```packageId``` can be any returned by the mutation [createRetailOrder](/presto/create-retail-order) or through querying [allPackages](/presto/all-packages).
+NOTE: the ```packageId``` can be any returned by the mutation [createRetailOrder](/presto/create-retail-order) (any ```package.pk``` in the ```shop.order.packages``` list) or through querying [allPackages](/presto/all-packages) (any ```node.pk``` in the ```data.allPackages.edges``` list).
 
 Response example:
 
