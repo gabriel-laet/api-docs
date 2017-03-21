@@ -4,7 +4,7 @@ A credential is needed to access either the sandbox or production environments, 
 
 ## Create credential
 
-To create a credential, log into your account, access the desired environment using one option bellow and follow the page instructions.
+To create a credential, log into your account, access the desired environment using one option below and follow the page instructions.
 
  - For Sandbox: [https://staging.loggi.com/contas/haxor/](https://staging.loggi.com/contas/haxor/)
  - For Production: [https://loggi.com/contas/haxor/](https://loggi.com/contas/haxor/)

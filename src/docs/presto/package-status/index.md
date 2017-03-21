@@ -20,6 +20,8 @@ query {
 }
 ```
 
+NOTE: the ```packageId``` can be any returned by the mutation [createRetailOrder](/presto/create-retail-order) or through querying [allPackages](/presto/all-packages).
+
 Response example:
 
 ```
