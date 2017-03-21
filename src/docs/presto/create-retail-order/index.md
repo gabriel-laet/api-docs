@@ -1,8 +1,9 @@
 # Create Retail Order
 
-Useful to Create a Retail Order. Can return Inquiry and Order information.
+Useful to Create a Retail Order. Returns the shop with the order created.
 
 Request example:
+
 
 ```graphql
 mutation {
@@ -11,7 +12,7 @@ mutation {
       clientMutationId: "loggi",
       packages: [
       	{
-      		recipientName: "Joao da Silva",
+          recipientName: "Joao da Silva",
           recipientPhone: "11999999999",
       	  destinationAddress:{
             addressComponents:[
@@ -136,4 +137,4 @@ Response example:
 
 #### NOTES:
 
-- ```createRetailOrder.input.id``` can be obtained through a call to the ```all-shops``` endpoint.
+- ```createRetailOrder.input.id``` can be obtained through a query to [allShop](/presto/all-shops).

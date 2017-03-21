@@ -50,4 +50,4 @@ Response example:
 
 #### NOTES:
 
-- ```shopId``` can be obtained through a call to the ```all-shops``` endpoint.
+- ```shopId``` can be obtained through a query to [allShop](/presto/all-shops).

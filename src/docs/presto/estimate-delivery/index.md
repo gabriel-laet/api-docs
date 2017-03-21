@@ -18,18 +18,18 @@ query {
     optimize: true
   ) {
     packages {
-          error
-          eta
-          index
-          rideCm
-          outOfCityCover
-          outOfCoverageArea
-          originalIndex
-          waypoint {
-            indexDisplay
-            originalIndexDisplay
-            role
-          }
+      error
+      eta
+      index
+      rideCm
+      outOfCityCover
+      outOfCoverageArea
+      originalIndex
+      waypoint {
+        indexDisplay
+        originalIndexDisplay
+        role
+      }
     }
     routeOptimized
     normal {
@@ -88,4 +88,4 @@ Response example:
 #### NOTES:
 
 - ```eta``` (*estimated time to deliver*) is measured in seconds.
-- ```shopId``` can be obtained through a call to the ```all-shops``` endpoint.  
+- ```shopId``` can be obtained through a query to [allShop](/presto/all-shops).  

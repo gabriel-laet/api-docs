@@ -44,4 +44,4 @@ Response example:
 
 #### NOTES:
 
-- ```packageOrder.packageId``` can be obtained through a call to the ```all-packages``` endpoint.
+- ```packageOrder.packageId``` can be obtained through a query to [allPackages](/presto/all-packages).
