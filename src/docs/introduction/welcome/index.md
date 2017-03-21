@@ -3,9 +3,14 @@
 
 This document describes how to integrate to Loggi API and enjoy the best of our on demand last mile delivery service.
 
-A previous basic knowledge of HTTP protocol and [GraphQL](http://graphql.org/docs/intro/) *(query language)* is desired. If you are a developer and has some doubts, please, check our [FAQ](/help/support).
+Basic knowledge of HTTP protocol is required.
 
-In case you don't find the information you need or reach a situation not covered in this documentation, please [contact us](/help/support).
+Knowledge of [**GraphQL**](http://graphql.org) is desired. If you don't know it, long story short is that it **is a
+query language**. [Here](/help/graphql-useful-resources) are some links where you can acquire this basic knowledge.
+
+If you are a developer and have doubts, you can start [here](/help/faq).
+
+In case you don't find the information you need or reach any situation not covered in this documentation, please [contact us](/help/support).
 
 ### Looking for old API versions?
 

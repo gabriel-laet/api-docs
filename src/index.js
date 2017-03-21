@@ -117,10 +117,11 @@ const config = {
   logo: LoggiDocsLogo,
   files: require.context('@loggi/markdown-docs/loader!./docs', true, /\.md$/),
   ordering: {
-    root: ['introduction', 'corp-overview', 'other-resources', 'help'],
+    root: ['introduction', 'corp-overview', 'presto', 'other-resources', 'help'],
     introduction: ['welcome', 'environments', 'getting-access', 'authorization', 'quick-graphql-tips'],
     'corp-overview': ['generate-a-quote', 'confirm-an-order', 'search-an-order', 'order-follow-up', 'cancel-order', 'share-an-order', 'rating-an-order'],
-    help: ['support', 'terms-of-use']
+    'presto': ['overview', 'all-shops', 'estimate-delivery', 'create-retail-order', 'all-packages', 'package-status'],
+    help: ['support', 'faq', 'graphql-useful-resources', 'terms-of-use']
   },
   onMarkdownIterate: (Tag, props, children) => {
     if (Tag === 'code' && (props['data-language'] === 'graphql' || (isMobile && props['data-language'] === 'graphiql'))) {
@@ -135,7 +136,7 @@ const config = {
       props.className = null;
       return <View {...props}>{children}</View>;
     }
-    
+
     if (Tag === 'a') {
       const url = Object.keys(props).find(k => k.startsWith('href')).split(',').pop();
       return <a href={url}>{children}</a>
