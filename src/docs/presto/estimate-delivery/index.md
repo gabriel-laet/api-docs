@@ -85,7 +85,7 @@ Response example:
 }
 ```
 
-#### NOTES:
+## NOTES
 
 - ```eta``` (*estimated time to deliver*) is measured in seconds.
 - ```shopId``` can be obtained through a query to [allShop](/presto/all-shops).  

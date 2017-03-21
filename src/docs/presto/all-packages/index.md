@@ -1,4 +1,4 @@
-## All Packages
+# All Packages
 
 Useful to get a list of all packages from a shop.
 
@@ -48,6 +48,6 @@ Response example:
 }
 ```
 
-#### NOTES:
+## NOTES
 
 - ```shopId``` can be obtained through a query to [allShop](/presto/all-shops).

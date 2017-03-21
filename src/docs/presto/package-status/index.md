@@ -42,6 +42,6 @@ Response example:
 }
 ```
 
-#### NOTES:
+## NOTES
 
 - ```packageOrder.packageId``` can be obtained through a query to [allPackages](/presto/all-packages).

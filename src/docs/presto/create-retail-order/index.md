@@ -135,6 +135,6 @@ Response example:
 }
 ```
 
-#### NOTES:
+## NOTES
 
 - ```createRetailOrder.input.id``` can be obtained through a query to [allShop](/presto/all-shops).
