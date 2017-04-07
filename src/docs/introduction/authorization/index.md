@@ -17,16 +17,16 @@ $ curl -v 'https://staging.loggi.com/graphql?' \
 {"data":{"login":{"user":{"apiKey":"a-valid-api-key"}}}}
 ```
 
-Except for the login, all services are private and require the usage of the HTTP Header `ApiKey`. Its value is composed by the email address followed by the apiKey returned above, separeted by a colon:
+Except for the login, all services are private and require the usage of the HTTP Header `authorization`. Its value is composed by the string "ApiKey" followed by a space and the email address followed by the apiKey returned above, separated by a colon:
 
-> ApiKey a-valid-email@domain.ext:a-valid-api-key
+> authorization: ApiKey a-valid-email@domain.ext:a-valid-api-key
 
 For example, a `curl` call to list cities:
 
 ```
 $ curl -v 'https://staging.loggi.com/graphql?' \
 >     -H 'content-type: application/json' \
->     -H 'ApiKey felipe.martins@loggi.com:5f459addf748f2a94da12a9f2c3211b64b38f6aa' \
+>     -H 'authorization: ApiKey felipe.martins@loggi.com:5f459addf748f2a94da12a9f2c3211b64b38f6aa' \
 >     --compressed \
 >     --data-binary '{"query":"query { allCities { edges { node { pk name slug } } } }"}'
 >
