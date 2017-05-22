@@ -26,7 +26,7 @@ For example, a `curl` call to list cities:
 ```
 $ curl -v 'https://staging.loggi.com/graphql?' \
 >     -H 'content-type: application/json' \
->     -H 'authorization: ApiKey felipe.martins@loggi.com:5f459addf748f2a94da12a9f2c3211b64b38f6aa' \
+>     -H 'authorization: ApiKey a-valid-username@domain.com:a-valid-api-key' \
 >     --compressed \
 >     --data-binary '{"query":"query { allCities { edges { node { pk name slug } } } }"}'
 >
