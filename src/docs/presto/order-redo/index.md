@@ -1,6 +1,6 @@
 # Order Redo
 
-When an order is dropped, it's possible to redoit by calling the mutation `orderRedo`.
+When an order is dropped, it's possible to redo it by calling the mutation `orderRedo`.
 
 This mutation receives the `id` of a droped order and a `clientMutationId`.
 
