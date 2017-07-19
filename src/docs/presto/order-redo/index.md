@@ -8,7 +8,7 @@ Request example:
 
 ```graphql
 mutation {
-  orderRedo(input: {id: 1, clientMutationId: "loggi"}) {
+  redoOrder(input: {id: 2, clientMutationId: "loggi"}) {
     success
     order {
       id
