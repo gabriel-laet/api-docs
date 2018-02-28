@@ -21,11 +21,11 @@ With the ```shopId``` in hands, you can follow our recommended work-flow:
 * Package: indicates the delivery location
 * Order: a collection of packages - a single Driver is assigned  to perform the delivery
 
-### Shop
+#### Shop
 * You can’t create a Shop through our API, this is done through our support.
 * You can list all shops assigned to your account. You’ll need this endpoint to find the Shop ID, which is required when creating an Order.
 
-### Package
+#### Package
 * A package is composed by three groups: Recipient, Destination & Charge Information
 * *Recipient:* name (required) & phone (once provided, we’ll send an SMS with delivery tracking)
 * *Destination:* delivery address info (lat/lng, street address, street number, neighborhood and city)

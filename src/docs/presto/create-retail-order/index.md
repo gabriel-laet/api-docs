@@ -140,3 +140,8 @@ Response example:
 ## NOTES
 
 - ```createRetailOrder.input.id``` can be obtained through a query to [allShop](/presto/all-shops).
+
+### Order Tracking
+Tracking is done by Package, once you create an Order, you get a list of package IDs
+* You can check the current status of a Package using this endpoint -
+[https://api.loggi.com/presto/package-status](https://api.loggi.com/presto/package-status)
