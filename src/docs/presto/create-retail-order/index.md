@@ -1,6 +1,8 @@
 # Create Retail Order
 
 Useful to Create a Retail Order. Returns the shop with the order created.
+* To create an Order, you’ll have to provide: • Shop ID (where the pickup is done)
+* A list of packages
 
 Request example:
 
