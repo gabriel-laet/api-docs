@@ -19,7 +19,7 @@ With the ```shopId``` in hands, you can follow our recommended work-flow:
 ### Basic Concepts
 * Shop: indicates the pickup location
 * Package: indicates the delivery location
-* Order: a collection of packages - a single Driver is assigned  to perform the delivery
+* Order: a collection of packages - a single Driver is assigned to perform the delivery
 
 #### Shop
 * You can’t create a Shop through our API, this is done through our support.
@@ -27,6 +27,6 @@ With the ```shopId``` in hands, you can follow our recommended work-flow:
 
 #### Package
 * A package is composed by three groups: Recipient, Destination & Charge Information
-* *Recipient:* name (required) & phone (once provided, we’ll send an SMS with delivery tracking)
+* *Recipient:* name (required) & phone (if provided, we’ll send an SMS with delivery tracking)
 * *Destination:* delivery address info (lat/lng, street address, street number, neighborhood and city)
-* *Charge Information:* charge method, charge value and charge change (when cash is the chosen charge method)
+* *Charge Information:* charge method, charge value and charge change (when the chosen charge method is cash)
