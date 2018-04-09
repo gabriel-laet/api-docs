@@ -26,7 +26,7 @@ With the ```shopId``` in hands, you can follow our recommended work-flow:
 * You can list all shops assigned to your account. You’ll need this endpoint to find the Shop ID, which is required when creating an Order.
 
 #### Package
-* A package is composed by three groups: Recipient, Destination & Charge Information
+* A package is composed by three components: Recipient, Destination & Charge Information
 * *Recipient:* name (required) & phone (if provided, we’ll send an SMS with delivery tracking)
 * *Destination:* delivery address info (lat/lng, street address, street number, neighborhood and city)
 * *Charge Information:* charge method, charge value and charge change (when the chosen charge method is cash)
