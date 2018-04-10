@@ -15,3 +15,18 @@ With the ```shopId``` in hands, you can follow our recommended work-flow:
 - Create an order, through the mutation [createRetailOrder](/presto/create-retail-order)
 
 - Verify the status of your delivery, through the query [packageStatus](/presto/package-status)
+
+### Basic Concepts
+* Shop: indicates the pickup location
+* Package: indicates the delivery location
+* Order: a collection of packages - a single Driver is assigned to perform the delivery
+
+#### Shop
+* You can’t create a Shop through our API, this is done through our support.
+* You can list all shops assigned to your account. You’ll need this endpoint to find the Shop ID, which is required when creating an Order.
+
+#### Package
+* A package is composed by three components: Recipient, Destination & Charge Information
+* *Recipient:* name (required) & phone (if provided, we’ll send an SMS with delivery tracking)
+* *Destination:* delivery address info (lat/lng, street address, street number, neighborhood and city)
+* *Charge Information:* charge method, charge value and charge change (when the chosen charge method is cash)
