@@ -89,3 +89,7 @@ Response example:
 
 - ```eta``` (*estimated time to deliver*) is measured in seconds.
 - ```shopId``` can be obtained through a query to [allShop](/presto/all-shops).  
+
+### Payment methods and returning point charges
+
+You can have more info about payment methods at our [Payment methods documentation pages](/presto/payment-methods)

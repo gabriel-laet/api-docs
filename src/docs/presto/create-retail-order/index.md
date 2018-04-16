@@ -152,17 +152,4 @@ Tracking is done by Package, once you create an Order, you get a list of package
 
 ### Payment Methods
 
-The payment methods are mapped as the following:
- * Credit card: 1
- * Debit card: 1
- * Money without change: 4
- * Money with change: 8
- * Check: 16
- * Payment with your own payment terminal: 32
- * Already charged: 64
- * Vale-Refeição: 128
- * Sodexo: 256
- * Alelo: 512
- * Ticket: 1024
-
-When using money with change, money without change or your own payment terminal, a return point will be added to your order. There will be charges that vary depending on your location.
+* You can consult our payment methods documentation at our [Payment methods documentation page](/presto/payment-methods)
