@@ -149,3 +149,7 @@ Response example:
 Tracking is done by Package, once you create an Order, you get a list of package IDs
 
 * You can check the current status of a Package using the [`packageOrder` query](/presto/package-status)
+
+### Payment Methods
+
+* You can consult our payment methods documentation at our [Payment methods documentation page](/presto/payment-methods)
