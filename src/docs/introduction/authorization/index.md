@@ -6,7 +6,7 @@ All services are hosted in the path `/public-graphql`, using HTTP verb `POST`. T
 $ curl -v 'https://staging.loggi.com/graphql?' \
 >     -H 'content-type: application/json;charset=UTF-8' \
 >     --compressed \
->     --data-binary '{"query":"mutation { login(input:{email: \"a-valid-username@domain.com\", token: \"a-valid-token\" }) { user { apiKey } } }"}'
+>     --data-binary '{"query":"mutation { login(input:{email: \"a-valid-username@domain.com\", password: \"a-valid-password\" }) { user { apiKey } } }"}'
 > POST /graphql? HTTP/1.1
 > Host: staging.loggi.com
 > content-type: application/json
