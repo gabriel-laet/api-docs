@@ -1,8 +1,8 @@
 # Estimate Delivery
 
-Useful to estimate delivery cost to destination(s).
+Para estimar o custo de uma entrega.
 
-Request example:
+Exemplo de chamada:
 
 ```graphql
 query {
@@ -47,7 +47,7 @@ query {
 
 ```
 
-Response example:
+Exemplo de resposta:
 
 ```
 {
@@ -85,11 +85,11 @@ Response example:
 }
 ```
 
-## NOTES
+## NOTAS
 
-- ```eta``` (*estimated time to deliver*) is measured in seconds.
-- ```shopId``` can be obtained through a query to [allShop](/presto/all-shops).  
+- ```eta``` (*estimated time to deliver*) É a estimativa em segundos.
+- ```shopId``` Pode ser obtido com uma chamada pra [allShops](/presto/all-shops).  
 
-### Payment methods and returning point charges
+### Metodos de pagamento e custos de ponto de retorno
 
-You can have more info about payment methods at our [Payment methods documentation pages](/presto/payment-methods)
+* Você pode conferir a documentação dos métodos de pagamento na [Página de documentação dos métodos de pagamento](/presto/payment-methods)

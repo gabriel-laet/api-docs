@@ -1,8 +1,8 @@
 # All Packages
 
-Useful to get a list of all packages from a shop.
+Comando para obter todos os pacotes das últimas 10 horas.
 
-Request example:
+Exemplo de chamada:
 
 ```graphql
 query {
@@ -19,7 +19,7 @@ query {
 }
 ```
 
-Response example:
+Exemplo de resposta:
 
 ```
 {
@@ -50,4 +50,4 @@ Response example:
 
 ## NOTES
 
-- ```shopId``` can be obtained through a query to [allShop](/presto/all-shops).
+- A ```shopId``` pode ser obtida com uma chamada de [allShops](/presto/all-shops).

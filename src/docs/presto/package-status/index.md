@@ -1,8 +1,8 @@
 # Package Status
 
-Useful to retrieve information on Order and Package status.
+Forma de se informar dos estados de seus pacotes e pedidos.
 
-Request example:
+Exemplo de chamada:
 
 ```graphql
 query {
@@ -20,9 +20,9 @@ query {
 }
 ```
 
-NOTE: the ```packageId``` can be any returned by the mutation [createRetailOrder](/presto/create-retail-order) (any ```package.pk``` in the ```shop.order.packages``` list) or through querying [allPackages](/presto/all-packages) (any ```node.pk``` in the ```data.allPackages.edges``` list).
+NOTA: O ```packageId``` pode ser qualquer que esteve na resposta de um [createRetailOrder](/presto/create-retail-order), (qualquer ```package.pk``` que faça parte da lista de ```shop.order.packages```) ou buscado com [allPackages](/presto/all-packages) (qualquer ```node.pk``` na lista ```data.allPackages.edges```).
 
-Response example:
+Exemplo de resposta:
 
 ```
 {
@@ -46,16 +46,16 @@ Response example:
 
 ## NOTES
 
-- ```packageOrder.packageId``` can be obtained through a query to [allPackages](/presto/all-packages).
-- ```package.status``` is an enumerable with the following values:
-  - ```Allocating```: loggi is searching for a driver to make this delivery.
-  - ```Going to pickup```: a driver was allocated, and is going to pickup this package at origin address.
-  - ```Pickup```: driver arrived at origin, and is picking up this package.
-  - ```Going to deliver```: driver picked up this package, and is going to customer address.
-  - ```Deliver```: driver arrived at customer address, and is delivering this package.
-  - ```Delivered```: driver delivered this package.
-  - ```Failed```: an error ocurred during pickup/delivery of this package, check ```package.statusCode``` and ```package.statusCodeDisplay``` for more details.
-- ```package.statusCode``` and ```package.statusCodeDisplay``` show the status of this package delivery, with the following values:
+- ```packageOrder.packageId``` pode ser obtido através da chamada [allPackages](/presto/all-packages).
+- ```package.status``` Pode ser qualquer um dos resultados abaixo:
+  - ```Allocating```: A loggi está procurando um mensageiro para fazer a entrega.
+  - ```Going to pickup```: Um mensageiro foi encontrado e alocado e está indo para o ponto de retirada.
+  - ```Pickup```: O mensageiro alocado está no ponto de retirada.
+  - ```Going to deliver```: O mensageiro saiu do ponto de retirada e está a caminho do ponto de entrega.
+  - ```Deliver```: O mensageiro está no ponto de entrega, fazendo a mesma.
+  - ```Delivered```: O pacote foi entregue pelo mensageiro.
+  - ```Failed```: um erro ocorreu durante a retirada ou entrega desse pacote, olhe o ```package.statusCode``` e ```package.statusCodeDisplay``` para obter mais detalhes.
+- ```package.statusCode``` e ```package.statusCodeDisplay``` mostram o status do pacote, segundo a lista abaixo:
   - ```0``` (Não disponível).
   - ```1``` (Agendado).
   - ```2``` (Entregue).

@@ -1,14 +1,12 @@
 # Order Redo
 
-When an order is dropped, it's possible to redo it by calling the mutation `orderRedo`.
+Quando um pedido fica com o estado de `dropped`, é possível refazê-lo com a chamada `orderRedo`. Essa chamada recebe o id do pedido com falha na alocação.
 
-This mutation receives the `id` of a droped order and a `clientMutationId`.
-
-Request example:
+Exemplo de chamada:
 
 ```graphql
 mutation {
-  redoOrder(input: {id: 2, clientMutationId: "loggi"}) {
+  redoOrder(input: {id: 2}) {
     success
     order {
       id
@@ -25,7 +23,7 @@ mutation {
 }
 ```
 
-Response example:
+Exemplo de resposta:
 
 ```
 {

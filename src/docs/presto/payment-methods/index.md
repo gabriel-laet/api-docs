@@ -1,21 +1,21 @@
 # Payment Methods
 
-## Payment methods map
+## Mapeamento das formas de pagamento
 
-The payment methods are mapped as the following:
- * Credit card: 1
- * Debit card: 1
- * Money without change: 4
- * Money with change: 8
- * Check: 16
- * Payment with your own payment terminal: 32
- * Already charged: 64
+As formas de pagamento tem seus códigos mapeados da seguinte forma:
+ * Cartão de crédito: 1
+ * Cartão de débito: 2
+ * Dinheiro sem troco: 4
+ * Dinheiro com troco: 8
+ * Cheque: 16
+ * Pagamento com maquininha da loja: 32
+ * Pagamento já realizado: 64
  * Vale-Refeição: 128
  * Sodexo: 256
  * Alelo: 512
  * Ticket: 1024
 
 
-## About return points
+## Sobre os métodos com ponto de retorno
 
-When using money with change, money without change or your own payment terminal, a return point will be added to your order. Notice that there may be aditional charges.
+Quando o pagamento é feito com dinheiro sem troco, dinheiro com troco, pagamento com maquininha da loja ou cheque, um ponto de retorno é adicionado automaticamente ao pedido. Esse ponto de retorno pode gerar cobranças

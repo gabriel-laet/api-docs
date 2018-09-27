@@ -1,13 +1,10 @@
 # Create Retail Order
 
-Useful to Create a Retail Order. Returns the shop with the order created.
+Comando usado para criar um novo pedido na plataforma.
 
-To create an Order, you’ll have to provide:
+Para criar o pedido você vai precisar de um [ShopID](/presto/all-shops) (que será o ponto onde a entrega será retirada) e os endereços e dados dos pacotes a serem entregados.
 
-* [Shop ID](/presto/all-shops) (where the pickup is done).
-* A list of packages to be delivered.
-
-Request example:
+Exemplo de chamada:
 
 
 ```graphql
@@ -104,7 +101,7 @@ mutation {
 }
 ```
 
-Response example:
+Exemplo de resposta:
 
 ```
 {
@@ -140,16 +137,17 @@ Response example:
 }
 ```
 
-## NOTES
+## NOTAS
 
-- ```createRetailOrder.input.id``` can be obtained through a query to [allShop](/presto/all-shops).
+- ```createRetailOrder.input.id``` pode ser obtido com uma chamada para [allShops](/presto/all-shops).
 
-### Order Tracking
+### Rastreio de pedidos
 
+O rastreamento é feito por pacote. Uma vez que você cria uma Order, você recebe uma lista de IDs dos pacotes.
 Tracking is done by Package, once you create an Order, you get a list of package IDs
 
-* You can check the current status of a Package using the [`packageOrder` query](/presto/package-status)
+* Você pode conferir o estado do pedido com a query [`packageOrder` query](/presto/package-status) ou a lista dos seus pedidos com [`searchOrders`](/presto/search-orders)
 
-### Payment Methods
+### Métodos de pagamento
 
-* You can consult our payment methods documentation at our [Payment methods documentation page](/presto/payment-methods)
+* Você pode conferir a documentação dos métodos de pagamento na [Página de documentação dos métodos de pagamento](/presto/payment-methods)

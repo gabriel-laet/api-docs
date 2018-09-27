@@ -1,7 +1,6 @@
 # Authorization
 
-All services are hosted in the path `/public-graphql`, using HTTP verb `POST`. The sample bellow is an example of a request using `curl` to create a authorization:
-
+Os serviços estão disponíveis em `/graphql`, usando o metodo HTTP `POST`. o exemplo abaixo é de como fazer uma request usando `curl` para obter a chave de API.
 ```
 $ curl -v 'https://staging.loggi.com/graphql?' \
 >     -H 'content-type: application/json;charset=UTF-8' \
@@ -17,11 +16,7 @@ $ curl -v 'https://staging.loggi.com/graphql?' \
 {"data":{"login":{"user":{"apiKey":"a-valid-api-key"}}}}
 ```
 
-Except for the login, all services are private and require the usage of the HTTP Header `authorization`. Its value is composed by the string "ApiKey" followed by a space and the email address followed by the apiKey returned above, separated by a colon:
-
-> authorization: ApiKey a-valid-email@domain.ext:a-valid-api-key
-
-For example, a `curl` call to list cities:
+Tirando o login, todos os serviços são privados e precisam de `authorization` no header. O valor da chave é ```Apikey email:api_key```, abaixo um exemplo da chave e também uma chamada usando `curl`
 
 ```
 $ curl -v 'https://staging.loggi.com/graphql?' \
@@ -41,4 +36,4 @@ $ curl -v 'https://staging.loggi.com/graphql?' \
 {"data":{"allCities":{"edges":[{"node":{"pk":4,"name":"Curitiba","slug":"ct"}},{"node":{"pk":1,"name":"S\u00e3o Paulo","slug":"sp"}},{"node":{"pk":2,"name":"Rio de Janeiro","slug":"rj"}},{"node":{"pk":3,"name":"Belo Horizonte","slug":"bh"}},{"node":{"pk":5,"name":"Porto Alegre","slug":"pa"}}]}}}
 ```
 
-For more details about the authentication services, go to [authorization resource](/other-resources/authorization).
+Para mais detalhes sobre os recursos de autenticação, vá para [authorization resources](/other-resources/authorization).

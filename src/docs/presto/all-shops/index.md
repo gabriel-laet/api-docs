@@ -1,8 +1,8 @@
 # Get All Shops information
 
-Useful to get information on all shops (shopId, name, categories, etc).
+Chamada importante para obter os dados de suas lojas habilitadas, como nome, instruções de retirada, endereço, ID (pk), formas de pagamento disponíveis.
 
-Request example:
+Exemplo de chamada:
 
 ```graphql
 query {
@@ -26,7 +26,7 @@ query {
 }
 ```
 
-Response example:
+Exemplo de resposta:
 
 ```
 {"data": {
